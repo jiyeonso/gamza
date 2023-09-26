@@ -1,0 +1,25 @@
+<style>
+/* 애니메이션을 정의합니다. */
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* 이미지에 이동 애니메이션을 적용합니다. */
+.moving-car {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    animation: moveLeft 5s linear infinite;
+}
+
+/* 이미지 스타일 설정 */
+.moving-car img {
+    max-width: 100%;
+    height: auto;
+}
+</style>
