@@ -24,7 +24,7 @@
     </header>
 
     <div class="moving-car">
-      <img src="감자트럭.png" alt="젼님의감자밭" />
+      <img src="감자트럭.png" alt="젼님의감자밭" onclick="catchJiyeon()" />
       <img src="걷는감자.gif" alt="젼님의감자밭" />
     </div>
 
@@ -126,15 +126,25 @@
         "찌릿! 정전기를 조심하세요.",
       ];
       const randNumber = Math.floor(Math.random() * 43);
+      const jyRandNumber = Math.floor(Math.random() * 2);
       // alert(fortunes[randNumber]);
+
       const showResult = () => {
         alert(fortunes[randNumber]);
         window.location.reload();
       };
+
+      const catchJiyeonMessages = ["왜요", "뭘봐요"];
+
+      const catchJiyeon = () => {
+        alert(catchJiyeonMessages[jyRandNumber]);
+        window.location.reload();
+      };
+
       console.log(`
-      . ᘏ▸◂ᘏ          ╭◜◝    ◜◝    ◜◝╮
-       ꒰ ɞ̴̶̷ ·̮ ɞ̴̶̷ ꒱   .oO   문구를 입력 ᝰꪑ
-       ( つ旦O         ╰◟◞    ◟◞    ◟◞╯
+      . ᘏ▸◂ᘏ         ╭◜◝         ◜◝        ◜◝╮
+       ꒰ ɞ̴̶̷ ·̮ ɞ̴̶̷ ꒱   .oO  동호님 병준님 소정님 감삽니다 ᝰꪑ
+       ( つ旦O         ╰◟◞         ◟◞        ◟◞╯
 `);
     </script>
   </body>
