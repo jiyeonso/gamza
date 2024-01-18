@@ -126,15 +126,14 @@
         "찌릿! 정전기를 조심하세요.",
       ];
       const randNumber = Math.floor(Math.random() * 43);
-      const jyRandNumber = Math.floor(Math.random() * 2);
-      // alert(fortunes[randNumber]);
+      const jyRandNumber = Math.floor(Math.random() * 4);
 
       const showResult = () => {
         alert(fortunes[randNumber]);
         window.location.reload();
       };
 
-      const catchJiyeonMessages = ["왜요", "뭘봐요"];
+      const catchJiyeonMessages = ["왜요", "뭘봐요", "아얏", "왜 찔러보세요?"];
 
       const catchJiyeon = () => {
         alert(catchJiyeonMessages[jyRandNumber]);
